@@ -57,9 +57,7 @@ PORT=5000
 MONGODB_URI=your_mongo_uri_here
 BASE_URL=http://localhost:4000
 ▶️ Running Locally
-bash
-Copy
-Edit
+
 # Start backend
 cd server
 npm run dev

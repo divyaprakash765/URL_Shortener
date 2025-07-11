@@ -3,11 +3,19 @@ import dotenv from "dotenv";
 import { connectDB } from "./utils/db.js";
 import urlRoutes from "./routes/urlRoute.js"
 import { URL } from "./models/url.js";
+import cors from "cors";
 
 const app = express();
 dotenv.config({});
 
 const PORT = process.env.PORT;
+
+const corsOptions = {
+    origin:'http://localhost:5173'
+}
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use("/url",urlRoutes);
