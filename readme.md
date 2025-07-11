@@ -49,15 +49,16 @@ cd url-shortener
 cd server
 npm install
 
-
 env
-Copy
-Edit
 PORT=5000
 MONGODB_URI=your_mongo_uri_here
 BASE_URL=http://localhost:4000
+
 ▶️ Running Locally
 
 # Start backend
-cd server
+npm run dev
+
+# start frontend
+cd client
 npm run dev
